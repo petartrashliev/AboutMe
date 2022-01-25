@@ -1,0 +1,112 @@
+/* PersonalWebsite */
+/* Style */
+/* .CSS */
+
+:root {
+  /* fonts */
+  --Text1: "Inter", sans-serif;
+  --Text2: "Roboto", sans-serif;
+}
+
+.header_text {
+  font-family: var(--Text2);
+  font-weight: 400;
+  text-align: left;
+}
+
+.subtitle_text {
+  font-family: var(--Text2);
+  font-weight: 200;
+  margin-top: -15px;
+  text-align: left;
+}
+
+.other_text_information {
+  font-family: var(--Text2);
+  text-align: right;
+  color: white;
+  margin-top: 0.3in;
+  font-size: smaller;
+}
+
+body {
+  background-color: #1e1b1b;
+  font-family: var(--Text2);
+}
+
+.container {
+  margin-top: 73px;
+}
+
+h1 {
+  font-family: var(--Text1);
+  font-size: 41px;
+  font-weight: 900;
+  line-height: 33.28px;
+  text-align: left;
+}
+
+.positioning {
+  font-family: var(--Text2);
+  margin-top: -15px;
+}
+
+i {
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  padding-right: 27px;
+}
+
+a {
+  /* -> icons colors */
+  color: white;
+  text-decoration: none;
+}
+
+i:hover {
+  color: rgb(179, 179, 179);
+}
+
+.round_button  {
+  border-radius: 40px;
+}
+
+.change_colour_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px !important;
+
+}
+
+/* ------------------------------ */
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 110px;
+    line-height: 90px;
+  }
+}
+
+@media (max-width: 375px){
+  .change_colour_button{
+    margin-top: 50px !important;
+  }
+}
+
+.animation {
+  animation-name: animation;
+  animation-duration: 1s;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}
